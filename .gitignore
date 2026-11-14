@@ -1,0 +1,20 @@
+# Extracted data (the repo ships data.zip; never commit the ~42 MB of JSON)
+data/
+# Generated pipeline outputs
+outputs/
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+# Virtual environments
+.venv/
+venv/
+# Test / notebook caches
+.pytest_cache/
+.ipynb_checkpoints/
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
