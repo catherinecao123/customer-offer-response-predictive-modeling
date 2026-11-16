@@ -29,4 +29,6 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["src"]
+# Repo root on sys.path so `from tests.conftest import ...` works under
+# bare `pytest` (CI); `python -m pytest` adds it implicitly, `pytest` does not.
+pythonpath = ["src", "."]
